@@ -23,12 +23,13 @@ body {
 .image {
     display: inline-block;
     width: 50%;
-    background:  hsl(277, 64%, 61%);
+    background: hsl(277, 64%, 61%);
     border-radius: 0px 15px 15px 0px;
     position: relative;
 }
-.insights{
-    color: hsl(276,61%,60%);
+
+.insights {
+    color: hsl(276, 61%, 60%);
     font-family: "Lexend Deca", "sans-serif";
 }
 
@@ -41,36 +42,81 @@ img {
 
 }
 
-p{
+p {
     color: grey;
     font-family: "Lexend Deca", "sans-serif";
     font-size: 15px;
     font-weight: 400;
 }
+
 h1 {
     color: white;
     font-family: "Lexend Deca", "sans-serif";
     font-weight: 500;
 }
-h3{
+
+h3 {
     color: white;
     font-family: "Inter", "sans-serif";
     font-weight: 500;
     margin-bottom: -5px;
 }
-.numbers{
+
+.numbers {
     display: flex;
 }
 
-.numbers div{
+.numbers div {
     padding-right: 50px;
     padding-top: -55px;
 }
 
-.numbers div p{
+.numbers div p {
     color: grey;
     font-family: "Inter", "sans-serif";
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-top: 10%;
+        width: 360px;
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 10px 10px 10px 10px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 360px;
+        order: 1;
+        height: 297.33px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    img {
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .stats {
+        order: 2;
+        width: auto;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .stats p{
+        text-align: center;
+    }
+
+    .numbers {
+        display: inline;
+    }
+
+    .numbers div {
+        padding-right: 0px;
+    }
 }
